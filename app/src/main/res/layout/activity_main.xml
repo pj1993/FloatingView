@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_show_once"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示一次"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_show_always"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一直显示"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_show_once"/>
+
+    <Button
+        android:id="@+id/bt_show_system"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示系统的"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_show_always"/>
+
+    <Button
+        android:id="@+id/bt_next_act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="跳转到下一个activity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_show_system"/>
+
+    <Button
+        android:id="@+id/bt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="弹一个消息"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_next_act"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

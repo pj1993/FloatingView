@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--其他view不要使用这几个id-->
+    <item name="floating_content_view_id" type="id" />
+    <item name="floating_app_content_view_id" type="id" />
+    <item name="floating_view_border_id" type="id" />
+    <item name="floating_icon_id" type="id" />
+</resources>

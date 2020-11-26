@@ -1,0 +1,3 @@
+include ':floating'
+include ':app'
+rootProject.name = "FloatingView"
