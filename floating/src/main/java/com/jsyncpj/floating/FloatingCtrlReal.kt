@@ -62,9 +62,9 @@ object FloatingCtrlReal {
     }
 
     fun show(floatingIntent: FloatingIntent?) {
-        if (floatingIntent?.targetClass?.simpleName.isNullOrBlank() || FloatingManager.instance.getFloatingView(
+        if (floatingIntent?.tag.isNullOrBlank() || FloatingManager.instance.getFloatingView(
                 ActivityUtils.getTopActivity(),
-                floatingIntent?.targetClass?.simpleName
+                floatingIntent?.tag
             ) == null
         ) {
             FloatingManager.instance.attach(floatingIntent)

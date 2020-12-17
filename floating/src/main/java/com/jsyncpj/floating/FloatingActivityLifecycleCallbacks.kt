@@ -88,6 +88,10 @@ internal class FloatingActivityLifecycleCallbacks : Application.ActivityLifecycl
 
     /**
      * 记录当前Activity的生命周期状态
+     * onActivityCreated
+     * onActivityResumed
+     * onActivityStopped
+     * onActivityDestroyed
      */
     private fun recordActivityLifecycleStatus(activity: Activity,lifecycleStatus:Int){
         if (activity.javaClass.canonicalName.isNullOrBlank()) return

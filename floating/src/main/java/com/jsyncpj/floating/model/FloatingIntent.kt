@@ -14,7 +14,7 @@ class FloatingIntent(val targetClass: Class<out AbsFloatingView?>) {
 
     var bundle: Bundle? = null
 
-    val tag: String = targetClass.simpleName
+    var tag: String = targetClass.simpleName
 
     var activity: Activity = ActivityUtils.getTopActivity()
 
